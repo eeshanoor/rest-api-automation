@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Eesha Noor - REST API Automation Suite" verbose="1" parallel="classes" thread-count="3">
+    <test name="Smoke Tests">
+        <groups>
+            <run><include name="smoke"/></run>
+        </groups>
+        <classes>
+            <class name="com.eeshanoor.tests.UsersApiTest"/>
+            <class name="com.eeshanoor.tests.AuthApiTest"/>
+            <class name="com.eeshanoor.tests.BookingApiTest"/>
+        </classes>
+    </test>
+    <test name="Regression Tests">
+        <groups>
+            <run><include name="regression"/></run>
+        </groups>
+        <classes>
+            <class name="com.eeshanoor.tests.UsersApiTest"/>
+            <class name="com.eeshanoor.tests.AuthApiTest"/>
+            <class name="com.eeshanoor.tests.BookingApiTest"/>
+        </classes>
+    </test>
+</suite>
